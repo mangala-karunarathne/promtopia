@@ -74,7 +74,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex flex-col items-center justify-center px-6 mx-auto max-w-7xl sm:px-16;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
@@ -90,19 +90,19 @@
 }
 
 .orange_gradient {
-  @apply text-transparent bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text;
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
 
 .green_gradient {
-  @apply text-transparent bg-gradient-to-r from-green-400 to-green-500 bg-clip-text;
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }
 
 .blue_gradient {
-  @apply text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text;
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
 
 .desc {
-  @apply max-w-2xl mt-5 text-lg text-gray-600 sm:text-xl;
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
 .search_input {
@@ -118,12 +118,12 @@
 }
 
 .prompt_layout {
-  @apply py-8 space-y-6 sm:columns-2 sm:gap-6 xl:columns-3;
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
 }
 
 /* Feed Component */
 .feed {
-  @apply flex flex-col items-center justify-center w-full max-w-xl gap-2 mx-auto mt-16;
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
 }
 
 /* Form Component */
@@ -132,12 +132,12 @@
 }
 
 .form_input {
-  @apply flex w-full p-3 mt-2 text-sm text-gray-500 rounded-lg outline-0;
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
 }
 
 /* Nav Component */
 .logo_text {
-  @apply text-lg font-semibold tracking-wide text-black max-sm:hidden font-satoshi;
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
 }
 
 .dropdown {
@@ -145,7 +145,7 @@
 }
 
 .dropdown_link {
-  @apply text-sm font-medium text-gray-700 font-inter hover:text-gray-500;
+  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
 }
 
 /* PromptCard Component */
@@ -154,17 +154,17 @@
 }
 
 .flex-center {
-  @apply flex items-center justify-center;
+  @apply flex justify-center items-center;
 }
 
 .flex-start {
-  @apply flex items-start justify-start;
+  @apply flex justify-start items-start;
 }
 
 .flex-end {
-  @apply flex items-center justify-end;
+  @apply flex justify-end items-center;
 }
 
 .flex-between {
-  @apply flex items-center justify-between;
+  @apply flex justify-between items-center;
 }
